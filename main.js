@@ -29,12 +29,8 @@ function getTime(){
     document.querySelector('.sec').style.animationPlayState = 'running';
     document.getElementById('sec-value').style.animationPlayState = 'running';
     secondHand.style.transform = `rotate(${secondsDegree}deg)`;
-    //secondHand.style.transition = 'all 1s ease';
     secondValue.style.transform = `rotate(${-secondsDegree}deg)`;
     secondValue.innerHTML = seconds;
-    
-
-    //console.log(now);
 }
 
 setInterval(getTime, 1000);
